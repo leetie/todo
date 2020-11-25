@@ -1,15 +1,3 @@
-# 🚀 Welcome to your new awesome project!
+The 🌶 spiciest to-do app built with Node. Part of [The Odin Project's](www.theodinproject.com) curriculum.
 
-This project has been created using **webpack scaffold**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+- See `debug.md` for special instructions about webpack config for compiling bootstrap (it was a nightmare) 💢

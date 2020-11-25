@@ -40,16 +40,16 @@ module.exports = {
       include: [path.resolve(__dirname, 'src')],
       loader: 'babel-loader'
     }, {
-      test: /.css$/,
-
+      test: /\.(scss)$/,
       use: [{
-        loader: "style-loader"
+        loader: 'style-loader', //injects CSS to page
       }, {
-        loader: "css-loader",
+        loader: 'css-loader', //translates CSS into CommonJS modules
+      }, {
+        loader: 'postcss-loader', //run post css actions
 
-        options: {
-          sourceMap: true
-        }
+      }, {
+        loader: 'sass-loader' //compiles Sass to CSS
       }]
     }]
   },
